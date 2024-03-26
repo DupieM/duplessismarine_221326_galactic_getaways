@@ -1,24 +1,39 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import { Navbar } from "react-bootstrap";
 import icon from "../Images/Logo.png";
+import './navbar_footer.css'
 
 function BasicNavbar() {
     return (
-       <Navbar style={{height: '104px', background: 'linear-gradient(to bottom, rgba(12, 5, 25, 0.7), rgba(12, 5, 25, 0.3))', textAlign: 'left'}}>
-            <Container style={{paddingTop: '7px',}}>
-                <Navbar.Brand href="/"><img src={icon} style={{width: '66px', marginRight: "-50px"}}/></Navbar.Brand>
-                <Nav>
-                    <Nav.Link href="/" style={{fontSize: '17pt', color: 'white'}}>Home</Nav.Link>
-                    <Nav.Link href="" style={{fontSize: '17pt', color: 'white'}}>Destinations</Nav.Link>
-                </Nav>
-                
-                <button style={{width: '160px', height: '55px', borderRadius: '100px', border: '4px solid rgba(242, 153, 74, 1)', backgroundColor: 'rgba(225, 225, 225, 0', color: 'white', fontSize: '16px', fontWeight: '700', fontFamily: '"Inter", sans-serif'}}>
-                    Get the app
-                </button>
-            </Container> 
-       </Navbar>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+          <div className='navHolder'>
+
+            <img src={icon} className='Logo'></img>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-container" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="#start" className="navlink">Home</a>
+                  <div class="underline"></div>
+                </li>
+                <li class="nav-item">
+                  <a href="#mid" className="navlink">Destinations</a>
+                  <div class="underline"></div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <button type="button" className="btn">Get the app</button>
+
+        </div>
+      </nav>
     )
 }
 

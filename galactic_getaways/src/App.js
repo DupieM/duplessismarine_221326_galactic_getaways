@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Landing from './pages/landing';
 import { Outlet } from 'react-router';
 import BasicNavbar from './components/navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
