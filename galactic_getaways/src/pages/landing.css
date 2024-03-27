@@ -1,7 +1,7 @@
 /* Dashboard */
 
 .box {
-    margin-bottom: 260px;
+    margin-bottom: 240px;
 }
 
 .bg_img {
@@ -99,6 +99,7 @@
     font-weight: 400;
     font-size: 56px;
     line-height: 61.6px;
+    margin-bottom: 26px;
 }
 
 .Body_2 {
@@ -107,9 +108,22 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 29.05px;
+    margin-bottom: 50px;
 }
 
 /* App */
+
+.bg_img2 {
+    width: 100%;
+    height: 1172px;
+}
+
+.maincard2 {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1060px;
+}
 
 .Sub_Heading_3 {
     color: white;
@@ -117,6 +131,7 @@
     font-weight: 400;
     font-size: 56px;
     line-height: 61.6px;
+    margin-bottom: 27px;
 }
 
 .Body_3 {
@@ -125,4 +140,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 29.05px;
+    margin-bottom: 40px;
+}
+
+.bg_img3 {
+    width: 69%;
+    height: 10%px;
 }
