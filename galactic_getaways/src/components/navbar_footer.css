@@ -10,7 +10,7 @@
     color: white;
     position: fixed;
     width: 100%;
-    background: linear-gradient(180deg, rgba(12, 5, 25, 0.70) 8.82%, rgba(12, 5, 25, 0.30) 73.1%, rgba(12, 5, 25, 0.00) 100%);
+    background: linear-gradient(180deg, rgba(12, 5, 25, 0.70) 8.82%, rgba(12, 5, 25, 0.30) 73.1%, rgba(12, 5, 25, 0.00));
     border: none;
 }
 
@@ -31,6 +31,11 @@
     width: 377px;
     padding-left: 117.5px;
     margin-right: 20px;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
 }
 
 .Logo {
