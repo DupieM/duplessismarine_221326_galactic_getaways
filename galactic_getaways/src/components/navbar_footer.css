@@ -71,7 +71,7 @@
 .btn:hover {
     border-radius: 100px;
     padding: 16px, 80px, 16px, 80px;
-    background-color: #F2994A;
+    background: linear-gradient(90deg, rgba(242, 153, 74, 1), rgba(206, 118, 41, 1));
     color: white;
     font-family: "Inter", sans-serif;
     font-weight: 700;
@@ -83,5 +83,61 @@
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.navbar-container ul li .underline {
+    height: 0px;
+    background-color: transparent;
+    width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+    margin: 69px;
+}
+
+.navbar-container ul li .underline2 {
+    height: 0px;
+    background-color: transparent;
+    width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+    margin: 94px;
+}
+
+.navbar-container ul li.active-link .underline {
+    width: 25%;
+    background: #7920C2;
+    height: 3.5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.navbar-container ul li.active-link2 .underline2 {
+    width: 25%;
+    background: #7920C2;
+    height: 3.5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.navbar-container ul li:hover .underline {
+    background: #7920C2;
+    width: 25%;
+}
+
+.navbar-container ul li:hover .underline2 {
+    background: #7920C2;
+    width: 25%;
+}
+
+.navbar-container ul li:active a {
+    transition: none;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.navbar-container ul li:active .underline {
+    transition: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-container ul li:active .underline2 {
+    transition: none;
+    background-color: rgba(255, 255, 255, 0);
+}
 
 /* Footer */

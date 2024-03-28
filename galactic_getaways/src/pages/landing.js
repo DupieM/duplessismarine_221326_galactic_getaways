@@ -3,14 +3,17 @@ import './landing.css';
 import React from "react";
 import img from  '../Images/Header_background.jpg';
 import img2 from  '../Images/mobile_app_background.jpg';
-import img3 from '../Images/Apple_iPhone_15_Pro_White_Titanium_1.png'
+import img3 from '../Images/Apple_iPhone_15_Pro_White_Titanium_1.png';
+import planet1 from '../Images/mars.png';
+import planet2 from '../Images/saturn.png';
+import planet3 from '../Images/pluto.png'
 
 function Landing(){
     return (
 
         <div className="App_landing">
 
-            <div className='box'>
+            <div id="header">
                 <img src={img} className='bg_img'/>
                 <div className="maincard">
                     <h2 className="Sub_Heading">Tired Of Global Warming?</h2>
@@ -28,22 +31,51 @@ function Landing(){
                 </div>
             </div>
 
-            <div className='box2'>
+            <div id="destinations" className="space">Hallo</div>
+
+            <div className='box2' >
                 <h2 className="Sub_Heading_2">A Stellar Selection</h2>
                 <p className="Body_2">
                     Explore three breathtaking destinations, each with <br/>
                     its own unique charm and mystery.
                 </p>
                 <div class="container">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-3">
-                            <div class="p-3 border bg-light">Custom column padding</div>
+                    <div class="row gx-4 justify-content-center">
+                        <div class="col-3" style={{width: '382px'}}>
+                            <div class="planet_1">
+                                <img src={planet1} className="p1" />
+                                <h5 className="p_name">Mars</h5>
+                                <div class="underline"></div>
+                                <p className="p_info">
+                                    Engage in thrilling activities like rover <br/>
+                                    expeditions and marvel at the breathtaking <br/>
+                                    Martian sunsets. Say hey to Elon!
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <div class="p-3 border bg-light">Custom column padding</div>
+                        <div class="col-3"  style={{width: '389px'}}>
+                            <div class="planet_2">
+                                <img src={planet2} className="p2" />
+                                <h5 className="p_name">Saturn</h5>
+                                <div class="underline"></div>
+                                <p className="p_info">
+                                    Experience weightlessness as you float among <br/>
+                                    Saturn's rings to witness the grandeur of the <br/>
+                                    gas giant from close quarters.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <div class="p-3 border bg-light">Custom column padding</div>
+                        <div class="col-3"  style={{width: '382px'}}>
+                            <div class="planet_3">
+                                <img src={planet3} className="p3" />
+                                <h5 className="p_name">Pluto</h5>
+                                <div class="underline"></div>
+                                <p className="p_info">
+                                    Uncover the mysteries of the distant dwarf <br/>
+                                    “planet” Pluto. Traverse its icy plains that <br/>
+                                    resides on the outskirts of our solar system.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
