@@ -1,6 +1,6 @@
 import React from "react";
 import icon from "../Images/Logo.png";
-import './navbar_footer.css'
+import './navbar.css'
 import { useEffect, useState } from "react";
 
 function BasicNavbar() {
