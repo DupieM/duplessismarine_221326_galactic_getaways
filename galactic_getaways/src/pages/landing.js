@@ -2,11 +2,16 @@ import '../App.css';
 import './landing.css';
 import React from "react";
 import img from  '../Images/Header_background.jpg';
-import img2 from  '../Images/mobile_app_background_2.jpg';
 import img3 from '../Images/Apple_iPhone_15_Pro_White_Titanium_1.png';
+import img4 from '../Images/vecteezy_astronauta-png-grafico-clipart-diseno_20003935 1.png';
 import planet1 from '../Images/mars.png';
 import planet2 from '../Images/saturn.png';
-import planet3 from '../Images/pluto.png'
+import planet3 from '../Images/pluto.png';
+import logo from '../Images/Logo.png';
+import icon from '../Images/instagram.png';
+import icon2 from '../Images/tiktok.png';
+import icon3 from '../Images/facebook.png';
+import icon4 from '../Images/twitter.png'
 
 function Landing(){
     return (
@@ -89,8 +94,7 @@ function Landing(){
 
             {/* Display App Section */}
 
-            <div className='box3'>
-                <img src={img2} className='bg_img2'/>
+            <div className='bg_img2'>
                 <div className="maincard2">
                     <h2 className="Sub_Heading_3">THE STARS IN YOUR POCKET... Coming soon</h2>
                     <p className="Body_3">
@@ -101,22 +105,52 @@ function Landing(){
                     <img src={img3} className='bg_img3'/>
                 </div>
 
+                <img src={img4} className='bg_img4'/>
+
                 {/* Footer Section */}
 
                 <div className="footer">
-                    <div className='maincard3'>
-                        <h2 className="Sub_Heading_3">THE STARS IN YOUR POCKET... Coming soon</h2>
-                        <p className="Body_3">
-                            We are very excited to launch our very own <br/>
-                            Celestial Voyages mobile application coming soon <br/>
-                            to the App Store & Google Play Store.
-                        </p>
+                    <div className="maincard4">
+                        <div className='mainbox'>
+                            <div>
+                                <img src={logo} className='logo'/>
+                                <h3 className='copyright'>Mariné du Plessis <b>© 2024</b></h3>
+                            </div>
+                            <div className='footerbox'>
+                                <h3 className='LH'>Links</h3>
+                                <h3 className='L'>Home</h3>
+                                <h3 className='L'>Destinations</h3>
+                                <h3 className='L'>Mobile App</h3>
+                            </div>
+                            <div className='footerbox2'>
+                                <h3 className='FLU'>Follow Us</h3>
+                                <div>
+                                    <a href='https://www.instagram.com/'>
+                                        <img src={icon} className='icons'/>
+                                    </a>
+                                    <a href='https://www.tiktok.com/'>
+                                        <img src={icon2} className='icons'/> <br/>
+                                    </a>
+                                    <a href='https://www.facebook.com/'>
+                                        <img src={icon3} className='icons'/>
+                                    </a>
+                                    <a href='https://twitter.com/?lang=en-za'>
+                                        <img src={icon4} className='icons'/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
+                    <div className='maincard3'>
+                        <h2 className="Sub_Heading_4">Subscribe to stay updated</h2>
+                        <div>
+                            <input type='name' placeholder='Space traveller name' className='TN'/>
+                            <input type='email' placeholder='Contact email address' className='TE'/>
+                            <button className="bt_3">Join Newsletter</button>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
         </div>
     );
 }
