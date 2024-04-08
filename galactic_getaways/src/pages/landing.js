@@ -1,6 +1,9 @@
 import '../App.css';
 import './landing.css';
 import React from "react";
+import { useState } from 'react';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 import img from  '../Images/Header_background.jpg';
 import img3 from '../Images/Apple_iPhone_15_Pro_White_Titanium_1.png';
 import img4 from '../Images/vecteezy_astronauta-png-grafico-clipart-diseno_20003935 1.png';
@@ -144,9 +147,13 @@ function Landing(){
                     <div className='maincard3'>
                         <h2 className="Sub_Heading_4">Subscribe to stay updated</h2>
                         <div>
-                            <input type='name' placeholder='Space traveller name' className='TN'/>
-                            <input type='email' placeholder='Contact email address' className='TE'/>
-                            <button className="bt_3">Join Newsletter</button>
+                            <form>
+                                <input type='name' placeholder='Space traveller name' className='TN' />
+                                <input type='email' placeholder='Contact email address' className='TE' />
+                                <Popup trigger={<button className="bt_3" type="submit">Join Newsletter</button>}>
+                                    <h4>Email succesfully send</h4>
+                                </Popup>
+                            </form>
                         </div>
                     </div>
                 </div>
