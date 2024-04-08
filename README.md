@@ -1,3 +1,2 @@
-# Please see link to my GitHub Repository Backend
+# Please see link to my Temporary deployed website
 
-https://github.com/DupieM/duplessismarine_221326_galactic_getaway_backend
